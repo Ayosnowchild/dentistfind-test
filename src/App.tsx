@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { mockPractices } from "./data/mockPractices";
+import { PracticeCard } from "./components/PracticeCard/PracticeCard";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="app-container">
+        <h1 className="app-title">Practice Dashboard</h1>
+        <p className="app-subtitle">Overview of dental practice performance</p>
+        <div className="practice-summary-section">
+          {mockPractices.map((practice) => (
+            <PracticeCard key={practice.id} practice={practice} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

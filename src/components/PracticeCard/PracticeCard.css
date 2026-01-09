@@ -1,0 +1,86 @@
+.practice-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #a7a8ab;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.practice-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.practice-card-header {
+  margin-bottom: 16px;
+}
+
+.practice-card-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.practice-card-location {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.practice-card-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.practice-card-metric {
+}
+
+.practice-card-metric-label {
+  font-size: 11px;
+  color: #6b7280;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.practice-card-metric-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.practice-card-status-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.practice-card-trend {
+  margin-bottom: 8px;
+}
+
+.practice-card-trend-label {
+  font-size: 11px;
+  color: #6b7280;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 480px) {
+  .practice-card {
+    padding: 16px;
+  }
+  
+  .practice-card-name {
+    font-size: 16px;
+  }
+  
+  .practice-card-metric-value {
+    font-size: 20px;
+  }
+}

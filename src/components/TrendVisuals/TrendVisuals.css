@@ -1,0 +1,17 @@
+.trend-visuals {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 60px;
+}
+
+.trend-visuals-bar {
+  flex: 1;
+  background-color: #073682;
+  border-radius: 2px 2px 0 0;
+  transition: height 0.3s ease, background-color 0.2s ease;
+}
+
+.trend-visuals-bar:hover {
+  background-color: #6592f3;
+}

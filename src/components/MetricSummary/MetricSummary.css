@@ -1,0 +1,21 @@
+.practice-card-metric-label {
+  font-size: 11px;
+  color: #6b7280;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.practice-card-metric-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}
+
+
+@media (max-width: 480px) {
+  
+  .practice-card-metric-value {
+    font-size: 20px;
+  }
+}
